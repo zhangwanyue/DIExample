@@ -1,4 +1,4 @@
-### tutorial link
+### Tutorial link
 
 * DYDI & CDI:
 https://www.baeldung.com/java-ee-cdi
@@ -6,7 +6,7 @@ https://www.baeldung.com/java-ee-cdi
 * Dagger2
 https://www.baeldung.com/dagger-2
 
-### how to build and run
+### How to build and run
 
 * run DYDI
 
