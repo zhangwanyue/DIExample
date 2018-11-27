@@ -18,6 +18,10 @@ https://www.baeldung.com/java-ee-cdi
 
 https://www.baeldung.com/dagger-2
 
+https://dzone.com/articles/dagger-2-tutorial-dependency-injection-made-easy
+
+https://google.github.io/dagger/users-guide
+
 ### How to build and run
 
 * run DYDI
