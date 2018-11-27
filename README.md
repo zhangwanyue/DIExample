@@ -1,9 +1,21 @@
+### Intro
+
+This directory contains three java project:
+
+* DYDI: Do-it-Yourself Dependency injection
+
+* CDI: Contexts and Dependency Injection
+
+* Dagger2: A fast and lightweight dependency injection framework, this framework is available for both Java and Android
+
 ### Tutorial link
 
-* DYDI & CDI:
+* DYDI & CDI
+
 https://www.baeldung.com/java-ee-cdi
 
 * Dagger2
+
 https://www.baeldung.com/dagger-2
 
 ### How to build and run
