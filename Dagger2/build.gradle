@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'net.ltgt.apt-idea' version "0.15" // https://stackoverflow.com/questions/42441844/annotation-processor-in-intellij-and-gradle
+}
+
+group 'BUPTNSRC'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+mainClassName = 'Dagger2.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    // https://mvnrepository.com/artifact/com.google.dagger/dagger
+    implementation group: 'com.google.dagger', name: 'dagger', version: '2.19'
+    // https://mvnrepository.com/artifact/com.google.dagger/dagger-compiler
+    // https://stackoverflow.com/questions/49457357/how-to-find-dependency-providing-annotation-processor
+    // https://stackoverflow.com/questions/42441844/annotation-processor-in-intellij-and-gradle
+    annotationProcessor group: 'com.google.dagger', name: 'dagger-compiler', version: '2.19'
+
+}
