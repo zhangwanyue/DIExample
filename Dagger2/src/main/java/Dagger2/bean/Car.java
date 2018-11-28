@@ -1,4 +1,4 @@
-package Dagger2;
+package Dagger2.bean;
 
 import javax.inject.Inject;
 

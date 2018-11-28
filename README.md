@@ -16,11 +16,13 @@ https://www.baeldung.com/java-ee-cdi
 
 * Dagger2
 
+**official user guide: https://google.github.io/dagger/users-guide**
+
 https://www.baeldung.com/dagger-2
 
 https://dzone.com/articles/dagger-2-tutorial-dependency-injection-made-easy
 
-https://google.github.io/dagger/users-guide
+https://www.future-processing.pl/blog/dependency-injection-with-dagger-2/
 
 ### How to build and run
 

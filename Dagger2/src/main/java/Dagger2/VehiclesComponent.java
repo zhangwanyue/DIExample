@@ -1,5 +1,6 @@
 package Dagger2;
 
+import Dagger2.bean.Car;
 import dagger.Component;
 
 /**

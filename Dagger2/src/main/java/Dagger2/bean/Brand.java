@@ -1,4 +1,4 @@
-package Dagger2;
+package Dagger2.bean;
 
 /**
  * Created by vera on 18-11-27.
