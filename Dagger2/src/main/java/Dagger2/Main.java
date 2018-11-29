@@ -31,9 +31,9 @@ public class Main {
 
         Battery battery2 = new Battery(100, 1000);
         VehiclesModule vehiclesModule2 = new VehiclesModule();
-        // dagger自动为@inject的类和对应的inject module一同创建一个工厂类，比如：Car类中被inject了Engine类和Brand类，dagger为他们构建了一个VehiclesModule_ProvideEngineFactory
-        // Engine类中被inject了Battery类，dagger为他们创建了一个EngineModule_ProvideBatteryFactory
-        // @Provide注释的类，比如：provideEngine()，会被放入工厂类中，成为proxyProvideEngine()，该工程类中会实际调用EngineModule.provideBattery()，构造出Battery类
+        // dagger自动为inject module中provide的类创建一个工厂类，比如：VehiclesModule中provide了Engine和Brand类，dagger为他们构建了VehiclesModule_ProvideEngineFactory和VehiclesModule_ProvideBrandFactory
+        // EngineModule中provide了Battery类，dagger为其创建了一个EngineModule_ProvideBatteryFactory
+        // @Provide注释的方法，比如：provideEngine()，会被放入工厂类中，成为proxyProvideEngine()，该工厂类在生成实例的过程中会实际调用EngineModule.provideBattery()，构造出Battery实例
         // 以下是component.buildCar()的实际内部代码
         Car car2 = new Car(VehiclesModule_ProvideEngineFactory.proxyProvideEngine(vehiclesModule2, battery2),
                         VehiclesModule_ProvideBrandFactory.proxyProvideBrand(vehiclesModule2));
